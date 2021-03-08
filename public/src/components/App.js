@@ -76,7 +76,7 @@ onClick = () => {
 
   getRecepies = () => {
     axios({
-      url:"http://localhost:10004/api/v1/blogposts/free",
+      url:"/api/v1/blogposts/free",
       method: "get"
     })
     .then(res=>

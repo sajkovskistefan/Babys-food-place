@@ -35,7 +35,7 @@ app.use(
     '/api/v1/blogposts',
     proxy(
         'http://localhost:10004',
-        { proxyReqPathResolver: (req) => `http://localhost:10004/api/v1/blogposts${req.url}` }
+        { proxyReqPathResolver: (req) => cors() `http://localhost:10004/api/v1/blogposts${req.url}` }
     )
 );
 

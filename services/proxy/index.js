@@ -43,6 +43,8 @@ app.use(
 //     )
 // );
 
+
+
 app.use('/', express.static(`${__dirname}/../../public/build`));
 
 const PORT = process.env.PORT || cfg.get('services').proxy.port;

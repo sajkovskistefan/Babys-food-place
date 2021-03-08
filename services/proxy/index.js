@@ -34,8 +34,8 @@ app.use(
 app.use(
     '/api/v1/blogposts',
     proxy(
-        'https://localhost:10004',
-        { proxyReqPathResolver: (req) => `https://localhost:10004/api/v1/blogposts${req.url}` }
+        'http://localhost:10004',
+        { proxyReqPathResolver: (req) => `http://localhost:10004/api/v1/blogposts${req.url}` }
     )
 );
 

@@ -3,7 +3,7 @@ const config = require('../config');
 
 const username = config.get('db').username;
 const password = config.get('db').password;
-const host = config.get('db').host; //cluster0.xyz123.mongodb.net
+const host = config.get('db').host;
 const dbname = config.get('db').dbname;
 
 mongoose.connect(

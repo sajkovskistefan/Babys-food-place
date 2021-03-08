@@ -11,6 +11,9 @@
         },
         "users": {
             "port": 10003
+        },
+        "blogposts": {
+            "port": 10004
         }    
     },
     "security": {

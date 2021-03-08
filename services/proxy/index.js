@@ -27,6 +27,13 @@ app.use(
         { proxyReqPathResolver: (req) => `http://localhost:10003/api/v1/users${req.url}` }
     )
 );
+app.use(
+    '/api/v1/blogposts',
+    proxy(
+        'http://localhost:10004',
+        { proxyReqPathResolver: (req) => `http://localhost:10004/api/v1/blogposts${req.url}` }
+    )
+);
 
 // app.use(
 //     '/',
@@ -44,5 +51,6 @@ app.listen(PORT, err => {
     if (err) {
         return console.log(err);
     }
+    
     console.log('Service successfully started on port', PORT);
 });

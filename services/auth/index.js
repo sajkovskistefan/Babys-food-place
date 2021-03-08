@@ -1,5 +1,6 @@
 const config = require('../../pkg/config');
 require('../../pkg/db');
+const cors = require('cors')
 const express = require('express');
 const bodyParser = require('body-parser');
 const auth = require('./handlers/auth');
@@ -7,6 +8,7 @@ const jwt = require('express-jwt');
 
 const api = express();
 api.use(bodyParser.json());
+api.use(cors())
 api.use(jwt({
     secret: config.get('security').jwt_key,
     algorithms: ['HS256']
@@ -23,7 +25,7 @@ api.use(function (err, req, res, next) {
 });
 
 api.post('/api/v1/auth/create-account', auth.createAccount);
-api.post('/api/v1/auth/login', auth.login);
+api.post('/api/v1/auth/login', cors(), auth.login);
 api.get('/api/v1/auth/refresh-token', auth.refreshToken);
 
 api.listen(config.get('services').auth.port, err => {

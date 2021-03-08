@@ -41,7 +41,7 @@ export class App extends React.Component {
 
 onClick = () => {
      
-  axios.post("http://localhost:10000/api/v1/auth/login",this.state)
+  axios.post("/api/v1/auth/login",this.state)
   .then(res => {
       console.log(res)
       this.setState({
@@ -77,7 +77,7 @@ onClick = () => {
   getRecepies = () => {
     axios({
       url:"/api/v1/blogposts/free",
-      method: "get"
+      method: "GET"
     })
     .then(res=>
       this.setState({

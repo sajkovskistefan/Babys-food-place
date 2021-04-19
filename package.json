@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node services/auth/index.js & node services/storage/index.js & node services/users/index.js & node services/proxy/index.js & node services/blogpost/index.js"
+    "start": "node services/auth/index.js & node services/storage/index.js & node services/users/index.js & node services/recipes/index.js & node services/proxy/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,9 @@
     "express-jwt": "^6.0.0",
     "form-data": "^4.0.0",
     "jsonwebtoken": "^8.5.1",
-    "mailgun.js": "^3.2.0",
-    "mongoose": "^5.11.15",
-    "node-input-validator": "^4.3.3"
+    "mailgun.js": "^3.3.0",
+    "mongoose": "^5.12.2",
+    "node-input-validator": "^4.4.0",
+    "validator": "^13.5.2"
   }
 }

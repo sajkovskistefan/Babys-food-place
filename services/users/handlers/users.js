@@ -61,6 +61,20 @@ const updatePartial = async (req, res) => {
     }
 };
 
+const updateCurrentUser = async (req, res) => {
+    try {
+        let data = await userData.update(req.user.uid, req.body);
+        if (data.nModified === 0) {
+            return res.status(404).send('Not Fount');
+        }
+        return res.status(204).send('');
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+}
+
 const remove = async (req, res) => {
     try {
         let data = await userData.remove(req.params.id);
@@ -80,5 +94,6 @@ module.exports = {
     create,
     update,
     updatePartial,
+    updateCurrentUser,
     remove,
 };

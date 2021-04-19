@@ -3,6 +3,7 @@ const { user, createAccountSchema, loginSchema } = require('../../../pkg/users/v
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cfg = require('../../../pkg/config');
+const mailer = require('../../../pkg/mailer');
 
 const createAccount = async (req, res) => {
     try {
@@ -21,14 +22,14 @@ const createAccount = async (req, res) => {
 
         let data = await userData.create(req.body);
 
-        // await mailer.send(
+        // let out = await mailer.send(
         //     req.body.email,
         //     'Welcome',
         //     {
         //         first_name: req.body.first_name,
         //         last_name: req.body.last_name,
         //     },
-        //     'welcome'
+        //     'register'
         // );
 
         return res.status(201).send('Created');
@@ -55,12 +56,11 @@ const login = async (req, res) => {
             uid: u._id,
             email: u.email,
             exp: (new Date().getTime() + (365 * 24 * 60 * 60 * 1000)) / 1000
-            // exp: (new Date().getTime() + (60 * 1000)) / 1000
         };
 
         let token = jwt.sign(payload, cfg.get('security').jwt_key);
 
-        res.status(200).send({jwt: token});
+        res.status(200).send({ user:u, jwt: token });
 
     } catch (err) {
         console.log(err);

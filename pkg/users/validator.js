@@ -4,21 +4,17 @@ const userSchema = {
     first_name: 'required|minLength:3',
     last_name: 'required|minLength:2',
     birthday: 'required',
-    email: 'required|email'
-    // email: 'required'
-
+    email: 'required|email',
 };
 
 const createAccountSchema = {
     email: 'required|email',
-    // email: 'required',
     password: 'required',
     password2: 'required'
 };
 
 const loginSchema = {
-    // email: 'required|email',
-    email: 'required',
+    email: 'required|email',
     password: 'required'
 };
 

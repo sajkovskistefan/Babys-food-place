@@ -1,0 +1,58 @@
+.getByPubDate{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.date-title{
+    width: 100%;
+    display: flex;
+}
+
+.title-fresh {
+    font-weight: 500;
+    color: #96BB36;
+    font-size: 36px;
+    font-family: Roboto Slab, serif;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.title-fresh::after {
+    content: "";
+    height: 2px;
+    background-color: #D8D8D8;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.most-stared{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.title-popular {
+    font-family: Roboto Slab, serif;
+    font-weight: 500;
+    color: #96BB36;
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title-popular::after {
+    content: "";
+    height: 2px;
+    background-color: #D8D8D8;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 90%;
+
+}

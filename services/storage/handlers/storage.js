@@ -3,11 +3,12 @@ const random = require('../../../pkg/random');
 
 const uploadFile = (req, res) => {
     const file = req.files.document;
-    const maxFilesize = 5 * 1024 * 1024; // 5 MB
+    const maxFilesize = 5 * 1024 * 1024;
     const allowedTypes = [
         'image/jpeg',
         'image/gif',
-        'image/png'
+        'image/png',
+        'image/jpg'
     ];
 
     if(!allowedTypes.includes(file.mimetype)) {
@@ -18,7 +19,9 @@ const uploadFile = (req, res) => {
         return res.status(400).send('Bad Request. Filesize exceeded.');
     }
 
-    let userDir = `${__dirname}/../../../uploads/${req.user.uid}`;
+    // let userDir = `${__dirname}/../../../uploads/${req.user.uid}`;
+    let userDir = `${__dirname}/../../../uploads/`;
+
 
     if(!fs.existsSync(userDir)) {
         fs.mkdirSync(userDir);
@@ -30,7 +33,10 @@ const uploadFile = (req, res) => {
 };
 
 const getFile = (req, res) => {
-    let userDir = `${__dirname}/../../../uploads/${req.user.uid}`;
+    // let userDir = `${__dirname}/../../../uploads/${req.user.uid}`;
+    let userDir = `${__dirname}/../../../uploads/`;
+
+
     let filename = req.params.file;
 
     if(!fs.existsSync(`${userDir}/${filename}`)) {

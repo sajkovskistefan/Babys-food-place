@@ -1,0 +1,145 @@
+.my-recipes {
+    width: 100%;
+}
+
+.title-recipes {
+    font-family: Roboto Slab, serif;
+    font-weight: 500;
+    color: #96BB36;
+    font-size: 36px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    margin-top: 100px;
+}
+
+.title-recipes::after {
+    content: "";
+    height: 2px;
+    background-color: #D8D8D8;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.plus {
+    width: 41px;
+    height: 41px;
+    background: #F0972A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border-radius: 50%;
+    float: right;
+    margin-top: -34px;
+}
+
+.sing {
+    margin:11px 11px;
+}
+
+.my-recipes-table {
+    width: 100%;
+    margin-top: 30px;
+  
+}
+
+.tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr auto;
+}
+
+.trr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr auto;
+    text-decoration: none;
+    height: 61px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    align-items: center;
+    margin-bottom: 5px;
+} 
+
+.table-head-1 {
+    padding-left: 15px;
+    height: 21px;
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #F0972A;
+    opacity: 1;
+    margin-bottom: 10px; 
+}
+
+.table-head-2 {
+    height: 21px;
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #F0972A;
+    opacity: 1; 
+    margin-bottom: 10px;
+}
+
+.table-head-3 {
+    height: 21px;
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #F0972A;
+    opacity: 1; 
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.table-head-4 {
+    margin-right: 10px;    
+    height: 21px;
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #F0972A;
+    opacity: 1;
+    margin-bottom: 10px; 
+}
+
+.my-recipe-title {
+    height: 21px;
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    opacity: 1;
+    padding-left: 15px;
+}
+
+.my-recipe-cat {
+    width: 80px;
+    height: 25px;
+    background: #96BB36 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    height: 16px;
+    text-align: center;
+    font: normal normal bold 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-right: 250px;
+}
+
+.my-recipe-date {
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    opacity: 1;
+    
+}
+
+.my-recipe-del {
+    margin-right: 22px;
+}

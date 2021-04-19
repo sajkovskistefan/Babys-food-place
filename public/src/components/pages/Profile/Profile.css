@@ -1,0 +1,131 @@
+
+.profile {
+    margin-top: 0px;
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: flex-start;
+}
+.little-left {
+    margin-left: 50px;
+}
+
+.div-profile-title {
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-profile {
+    height: 48px;
+    padding-right: 20px;    
+    color: var(--green);
+    text-align: left;
+    font: normal normal bold 36px/48px Roboto Slab;
+    letter-spacing: 0px;
+    color: #96BB36;
+    opacity: 1;
+};
+
+
+
+.profile-cont {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    margin-top: -130px;
+    float: left;
+    width: 10%;
+    position: relative;
+}
+
+.image-avatar {
+    border-radius: 50%;
+    width: 123px;
+    height: 123px;
+    margin-top: 140px;
+    margin-left: 20px;
+}
+
+.avatar-btn::-webkit-file-upload-button {
+    visibility: hidden;
+    
+}
+
+.avatar-btn::before {
+    content: 'change avatar';
+}
+
+.avatar-btn {
+    top: 489px;
+    left: 336px;
+    width: 174px;
+    height: 32px;
+    border: 1px solid #A5A5A5;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    text-transform: uppercase;
+    margin-top:30px;
+    padding: 4px 28px;
+    border-radius: 5px;
+}
+
+.update{
+    float: left;
+    margin-left: 50px;
+}
+
+.update-acc{
+    width: 124px;
+    height: 40px;
+    background: #96BB36 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029; 
+    opacity: 1;
+    text-align: center;
+    font: normal normal 900 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    border-radius: 5px;
+    border:none;
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+    background: #f0efea;
+    width: 255px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    width: 150px;
+    text-align: left;
+    color: #f0972a;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Roboto Slab;
+}

@@ -2,14 +2,18 @@ const cfg = require('../../pkg/config');
 const express = require('express');
 const jwt = require('express-jwt');
 const upload = require('express-fileupload');
-
+const cors = require('cors');
 const storage = require('./handlers/storage');
 
 const api = express();
-
+api.use(cors());
 api.use(jwt({
     secret: cfg.get('security').jwt_key,
     algorithms: ['HS256']
+}).unless({
+    path: [
+        { url: /\/api\/v1\/storage\/.*/, methods: ['GET'] }
+    ]
 }));
 
 api.use(function (err, req, res, next) {

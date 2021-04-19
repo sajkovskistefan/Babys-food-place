@@ -1,12 +1,10 @@
 const cfg = require('../../pkg/config');
 const express = require('express');
 const proxy = require('express-http-proxy');
-const cors = require("cors");
+const cors = require('cors');
 
 const app = express();
 app.use(cors());
-app.use(express.json());
-
 
 app.use(
     '/api/v1/auth',
@@ -31,23 +29,22 @@ app.use(
         { proxyReqPathResolver: (req) => `http://localhost:10003/api/v1/users${req.url}` }
     )
 );
+
 app.use(
-    '/api/v1/blogposts',
+    '/api/v1/recipes',
     proxy(
         'http://localhost:10004',
-        { proxyReqPathResolver: (req) => cors() `http://localhost:10004/api/v1/blogposts${req.url}` }
+        { proxyReqPathResolver: (req) => `http://localhost:10004/api/v1/recipes${req.url}` }
     )
 );
 
-// app.use(
-//     '/',
-//     proxy(
-//         'http://localhost:3000',
-//         { proxyReqPathResolver: (req) => `http://localhost:3000/${req.url}` }
-//     )
-// );
-
-
+app.use(
+    '/',
+    proxy(
+        'http://localhost:3000',
+        { proxyReqPathResolver: (req) => `http://localhost:3000/${req.url}` }
+    )
+);
 
 app.use('/', express.static(`${__dirname}/../../public/build`));
 
@@ -57,6 +54,5 @@ app.listen(PORT, err => {
     if (err) {
         return console.log(err);
     }
-    
     console.log('Service successfully started on port', PORT);
 });

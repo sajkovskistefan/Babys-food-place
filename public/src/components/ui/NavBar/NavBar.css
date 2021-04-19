@@ -1,0 +1,144 @@
+.navigation {
+    width: 100%;
+    min-height: 95px;
+    background: #f8f7f2;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex: 1 0 30%;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.navbar ul li {
+    margin: 0 10px 0 10px;
+    text-transform: uppercase;
+    opacity: 1;
+    font: normal bold 18px/24px Roboto, sans-serif;
+}
+
+.link-item {
+    text-decoration: none;
+    color: #A5A5A5;
+}
+
+.nav-link {
+    list-style-type: none;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    position: relative;
+}
+.nav-link :hover {
+    color: #f0972a;
+}
+
+.nav-link a.active {
+    color: #f0972a;
+}
+
+.logo {
+    width: 177px;
+    height: 58px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background: #f0972a; 
+}
+
+.spacer {
+    margin: 0 15px 0 15px;
+    color: #f0972a;
+    margin-top: 10px;
+    font: normal normal bold 18px/24px Roboto;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-login {
+    width: 108px;
+    height: 44px;
+    opacity: 1;
+    font: normal 500 16px Roboto;
+    color: #A5A5A5;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #A5A5A5;
+    background: transparent;
+
+}
+
+.btn-singup {
+    width: 179px;
+    height: 44px;
+    background: #96BB36 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border: none;
+    font: normal 500 16px Roboto;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.profileNav{
+    height: 24px;
+    text-align: left;
+    font: normal normal 500 18px Roboto;
+    color: #96BB36;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.toggle-li{
+    margin-right: 20px;   
+}
+
+.link-one {
+    color: #96BB36;
+    text-decoration-color: grey;
+    font: 600 16px Roboto;
+}
+
+.link-two {
+    color: #F0972A;
+    text-decoration-color: grey;
+    font: 600 16px Roboto;
+}
+
+.link-three {
+    color: #B5B5B4;
+    text-decoration-color: grey;
+    font: 600 16px Roboto;
+}

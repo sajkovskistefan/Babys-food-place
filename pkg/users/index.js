@@ -5,10 +5,13 @@ const User = mongoose.model(
     {
         first_name: String,
         last_name: String,
-        birthday: Date,
+        birthday: String,
         email: String,
         password: String,
-        password2: String
+        img: {
+            data: Buffer,
+            contentType: String
+        }
     }
 );
 

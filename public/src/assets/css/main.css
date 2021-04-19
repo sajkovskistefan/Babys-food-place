@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #f8f7f2;
+}
+
+.app {
+    margin: 0 auto;
+    width: calc(100%-33%);
+    padding-left: 17%;
+    padding-right: 17%;
+}

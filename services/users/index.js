@@ -5,10 +5,21 @@ const bodyParser = require('body-parser');
 const users = require('./handlers/users');
 const jwt = require('express-jwt');
 const cors = require('cors');
+const path = require("path");
+
 
 const api = express();
 api.use(cors());
 api.use(bodyParser.json());
+
+
+
+
+
+
+
+
+
 api.use(jwt({
     secret: config.get('security').jwt_key,
     algorithms: ['HS256']

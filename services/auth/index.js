@@ -1,5 +1,7 @@
 const config = require('../../pkg/config');
 require('../../pkg/db');
+const path = require("path");
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const auth = require('./handlers/auth');
@@ -7,6 +9,20 @@ const jwt = require('express-jwt');
 const cors = require('cors');
 
 const api = express();
+
+
+
+
+api.use(express.static(path.join(__dirname, "../build")));
+
+api.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
+});
+
+
+
+
+
 api.use(bodyParser.json());
 api.use(cors());
 api.use(jwt({

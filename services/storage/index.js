@@ -4,8 +4,19 @@ const jwt = require('express-jwt');
 const upload = require('express-fileupload');
 const cors = require('cors');
 const storage = require('./handlers/storage');
+const path = require("path");
+
 
 const api = express();
+
+
+
+
+
+
+
+
+
 api.use(cors());
 api.use(jwt({
     secret: cfg.get('security').jwt_key,

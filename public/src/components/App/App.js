@@ -16,7 +16,7 @@ import '../../assets/css/main.css';
 
 
 const App = () => {
-   
+    console.log(process.env.NODE_ENV);
     return(
         <div >
             <div className="app">

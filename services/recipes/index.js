@@ -1,6 +1,8 @@
 const cfg = require('../../pkg/config');
 require('../../pkg/db');
 const cors = require('cors');
+const path = require("path");
+
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -11,6 +13,15 @@ const recipes = require('./handlers/recipes');
 const api = express();
 api.use(cors());
 api.use(bodyParser.json());
+
+
+
+
+
+
+
+
+
 
 api.use(jwt({
     secret: cfg.get('security').jwt_key,

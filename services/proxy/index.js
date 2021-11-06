@@ -1,10 +1,15 @@
 const cfg = require('../../pkg/config');
 const express = require('express');
+const path = require('path')
 const proxy = require('express-http-proxy');
 const cors = require('cors');
 
 const app = express();
 app.use(cors());
+
+
+
+
 
 app.use(
     '/api/v1/auth',
@@ -46,7 +51,11 @@ app.use(
     )
 );
 
-app.use('/', express.static(`${__dirname}/../../public/build`));
+// app.get("/*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "../build", "index.html"));
+//   });
+
+app.use('/', express.static(`${__dirname}../public/build`));
 
 const PORT = process.env.PORT || cfg.get('services').proxy.port;
 

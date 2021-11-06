@@ -33,7 +33,7 @@ export const MyRecipes = () => {
     .catch(err => {
         console.log(err)
     })
-},[])
+},[myrecipes])
 
 
     const deleteRecipe = async (id) => {

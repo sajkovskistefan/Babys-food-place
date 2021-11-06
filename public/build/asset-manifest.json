@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08e5e042.chunk.css",
+    "main.js": "/static/js/main.ddb5fb03.chunk.js",
+    "main.js.map": "/static/js/main.ddb5fb03.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.383cb7ce.js",
+    "runtime-main.js.map": "/static/js/runtime-main.383cb7ce.js.map",
+    "static/js/2.5803590e.chunk.js": "/static/js/2.5803590e.chunk.js",
+    "static/js/2.5803590e.chunk.js.map": "/static/js/2.5803590e.chunk.js.map",
+    "static/js/3.91885aab.chunk.js": "/static/js/3.91885aab.chunk.js",
+    "static/js/3.91885aab.chunk.js.map": "/static/js/3.91885aab.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.08e5e042.chunk.css.map": "/static/css/main.08e5e042.chunk.css.map",
+    "static/js/2.5803590e.chunk.js.LICENSE.txt": "/static/js/2.5803590e.chunk.js.LICENSE.txt",
+    "static/media/fast-food.caa277d5.png": "/static/media/fast-food.caa277d5.png",
+    "static/media/icon_arrows_white.3169ddf7.svg": "/static/media/icon_arrows_white.3169ddf7.svg",
+    "static/media/icon_back_white.bb6f7670.svg": "/static/media/icon_back_white.bb6f7670.svg",
+    "static/media/icon_close.520f5224.svg": "/static/media/icon_close.520f5224.svg",
+    "static/media/icon_plate.b362ca61.svg": "/static/media/icon_plate.b362ca61.svg",
+    "static/media/icon_plus_white.d5c77a04.svg": "/static/media/icon_plus_white.d5c77a04.svg",
+    "static/media/icon_star.978cf848.svg": "/static/media/icon_star.978cf848.svg",
+    "static/media/icon_time.fc3cbbdd.svg": "/static/media/icon_time.fc3cbbdd.svg",
+    "static/media/icon_trashcan.f71cfd14.svg": "/static/media/icon_trashcan.f71cfd14.svg",
+    "static/media/logo_color.06b8af3b.svg": "/static/media/logo_color.06b8af3b.svg",
+    "static/media/logo_white.e797be93.svg": "/static/media/logo_white.e797be93.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.383cb7ce.js",
+    "static/js/2.5803590e.chunk.js",
+    "static/css/main.08e5e042.chunk.css",
+    "static/js/main.ddb5fb03.chunk.js"
+  ]
+}
